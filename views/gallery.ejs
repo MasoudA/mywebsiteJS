@@ -1,0 +1,109 @@
+<!doctype html>
+<html lan="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Masoud Ahmadi Blug">
+    <meta name="author" content="Masoud Ahmadi">
+
+    <title>Masoud's Gallery</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/stylesheets/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="/stylesheets/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/stylesheets/main.css" type="text/css">
+    <link rel='stylesheet prefetch' href='http://dimsemenov-static.s3.amazonaws.com/dist/magnific-popup.css'>
+
+        <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+/* preview styles */
+.popup-gallery {
+  margin: 20px auto 0;
+}
+
+a.pop {
+  padding: 8px;
+  float: left;
+}
+
+.info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+    </style>
+
+    <script src="/javascripts/prefixfree.min.js"></script>
+ </head>
+ <body>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="/#page-top">Masoud Ahmadi</a>
+            </div>
+
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <% include templates/pagelink.ejs %>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <header class="sb-page-header" >
+        <div class="container">
+            <h1>Gallery</h1>
+            <p>Hobbies, activities, achievements, and important moments of my life.  </p>
+        </div>
+    </header>
+    <section>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <div id="ollPics" class="popup-gallery">
+                    <script src="/javascripts/galley.loadimage.js"></script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="dFooter text-muted">Copyright © Masoud 2016</footer>
+    <!-- jQuery -->
+    <script src="/javascripts/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/javascripts/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript 
+    <script src="/javascripts/jquery.easing.min.js"></script>
+    <script src="/javascripts/jquery.fittext.js"></script>
+    <script src="/javascripts/wow.min.js"></script> -->
+    <script src='http://dimsemenov-static.s3.amazonaws.com/dist/jquery.magnific-popup.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.ui.min.js'></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/javascripts/gallery.js"></script>
+ </body>
+ </html>
